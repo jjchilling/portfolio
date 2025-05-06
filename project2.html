@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Julie Chung</title>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+  <div class="top-bar">
+      <div class="title">
+          <a href="index.html" class="title-link">Julie Chung</a> 
+      </div>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links" id="nav-links">
+          <a href="about.html">About</a>
+          <a title="Julie Chung" href="assets/Heesu_Julie_Chung_Resume.pdf" target="_blank">Resume</a>
+      </nav>
+  </div>
+  <div id="progress-bar"></div>
+
+
+<div class="project-image">
+  <img src="assets/p2-thumbnail.png" alt="Partiful">
+</div>
+
+
+<div class="page-layout">
+
+
+  
+
+  <div class="sidebar">
+    <a href="#overview fade-in" class="sidebar-link">Overview</a>
+    <a href="#issue fade-in" class="sidebar-link">Issue</a>
+    <a href="#solution" class="sidebar-link">Solution</a>
+    <a href="#design" class="sidebar-link">Design Process</a>
+    <a href="#add" class="sidebar-link">Additional Idea</a>
+    <a href="#final" class="sidebar-link">Final Prototype</a>
+    <a href="#conclusion" class="sidebar-link">Conclusion</a>
+  </div>
+
+  <div class="main-content fade-in" style="animation-delay: 0.4s;">
+    <h1>Partiful: Hangout</h1>
+
+    <div class="context">
+      <div class="context-block">
+        <div class="context-header"><b>Team</b></div>
+        <div class="context-para">Julie Chung, Roberto Gonzales, Emily Wang, Kara Wong</div>
+      </div>
+      <div class="context-block">
+        <div class="context-header"><b>Role</b></div>
+        <div class="context-para">Designer</div>
+      </div>
+      <div class="context-block">
+        <div class="context-header"><b>Skills</b></div>
+        <div class="context-para">UI/UX, Design, Wireframe</div>
+      </div>
+      <div class="context-block">
+        <div class="context-header"><b>Duration</b></div>
+        <div class="context-para">March - April 2025</div>
+      </div>
+    </div>
+
+    <h2 id="overview fade-in" style="animation-delay: 0.4s;">Overview</h2>
+      
+    <p>
+      Partiful is a mobile app targeted towards college students who host parties or events with friends or 
+      classmates. According to the Partiful team, the most popular mean for people to use Partiful is to gather RSVP for
+      an event they feel confident about with a pre-established event idea. 
+    </p>
+    <div class="case-image-container fade-in" style="animation-delay: 0.4s;">
+        <img src="assets/partiful.avif" alt="Partiful">
+    </div>
+
+    <h2 id="issue fade-in" style="animation-delay: 0.4s;">Identifying the Issue</h2>
+    <p>
+      The Partiful team recognized that Partiful can feel too "extra" for smaller hangs, and the users typically resort to chaotic 
+      group chats or sharing flyers through Instagram. Another pain point recognized by the users was that they feel responsible for an event,
+      because they must pick a poster / theme / effect and serve as a "host".
+    </p>
+
+
+    <h2 id="solution">Solution to the Problem</h2>
+    <p>
+      Thus, we decided to conduct user research and comparative analysis to determine how to develop a smaller gathering feature for friend groups in college. 
+      When spoken with numerous college students that fall within Partiful's target audience, the two most popular competitors of Partiful were Google Calendar and When2Meet.
+      We compared the pros and cons of both competitors and decided to takeaway features that will be beneficial to Partiful.
+
+    </p>
+
+    <div class="slider-container">
+      <button class="nav left" id="prev">&#8592;</button>
+      <div class="slider-track" id="slider-track">
+        <div class="slide"><img src="assets/p2-comp1.png" alt="Google Calendar"></div>
+        <div class="slide"><img src="assets/p2-comp2.png" alt="When2Meets"></div>
+      </div>
+      <button class="nav right" id="next">&#8594;</button>
+    </div>
+
+    <p>
+      Based on this comparative analysis, we determined that a core functionality we must implement to make sure users can approach this feature
+      easily was to reduce steps to create a new event in the app and also allow users to view everyone's availability in a more visually appealing manner.
+      Therefore, we decided to name the small gathering feature as Hangout, and incorporated to the pre-existing Partiful's design. 
+      We also explored the possibility of adding an iMessage plugin that allows users to directly host events and RSVP immediately from their texts.
+       
+    </p>
+
+    <h2 id="design">Design Process</h2>
+
+    <h2 id="lofi">Sketch</h2>
+    <p>
+      To begin the design process, each member in the group drew a sketch of how to incorporate the Hangout feature. 
+      The following sketches explore different userflows that prioritize approachability, learnability, and memorability.
+    </p>
+    <div class="slider-container">
+      <button class="nav left" id="prev">&#8592;</button>
+      <div class="slider-track" id="slider-track">
+        <div class="slide"><img src="assets/sketch1.jpeg" alt="Image 1"></div>
+        <div class="slide"><img src="assets/sketch2.jpeg" alt="Image 2"></div>
+        <div class="slide"><img src="assets/sketch3.jpeg" alt="Image 3"></div>
+        <div class="slide"><img src="assets/sketch4.jpeg" alt="Image 4"></div>
+      </div>
+      <button class="nav right" id="next">&#8594;</button>
+    </div>
+
+    <h2 id="lofi">Lo-fi Designs</h2>
+    <p>For the design process, I began by creating a low-fidelity design emphasizing the key functionalities 
+      from the user analysis process. I decided to reference pre-existing movie theater websites, 
+      such as AMC and Cinemark. I utilized traditional elements such as vertical layouts, grids, and sliding galleries.
+      The following sliding galleries depict my low-fidelity design for desktop, tablet, and mobile.
+    </p>
+    <div class="slider-container">
+      <button class="nav left" id="prev">&#8592;</button>
+      <div class="slider-track" id="slider-track">
+        <div class="slide"><img src="assets/wf1.png" alt="Image 1"></div>
+        <div class="slide"><img src="assets/wf2.png" alt="Image 2"></div>
+        <div class="slide"><img src="assets/wf3.png" alt="Image 3"></div>
+        <div class="slide"><img src="assets/wf4.png" alt="Image 4"></div>
+        <div class="slide"><img src="assets/wf5.png" alt="Image 5"></div>
+        <div class="slide"><img src="assets/wf6.png" alt="Image 6"></div>
+        <div class="slide"><img src="assets/wf7.png" alt="Image 7"></div>
+      </div>
+      <button class="nav right" id="next">&#8594;</button>
+    </div>
+
+   
+    <h2 id="hifi">Hi-fi Designs</h2>
+    <p>Based on the low-fidelity design, we created a high-fidelity design that incorporates Partiful's color palette and aesthetics. 
+      We also simulated changes that follow clicking on dropdown menu and selecting various options when inviting others. The following is
+      the interactive Figma demo that simulates a userflow.</p>
+    
+
+    <div class="slider-container">
+      <button class="nav left" id="prev">&#8592;</button>
+      <div class="slider-track" id="slider-track">
+
+        <div class="slide"><img src="assets/parti-1.png" alt="Image 1"></div>
+        <div class="slide"><img src="assets/parti-2.png" alt="Image 2"></div>
+        <div class="slide"><img src="assets/parti-3.png" alt="Image 3"></div>
+        <div class="slide"><img src="assets/parti-4.png" alt="Image 4"></div>
+        <div class="slide"><img src="assets/parti-5.png" alt="Image 6"></div>
+        <div class="slide"><img src="assets/parti-7.png" alt="Image 7"></div>
+        <div class="slide"><img src="assets/parti-8.png" alt="Image 8"></div>
+        <div class="slide"><img src="assets/parti-9.png" alt="Image 9"></div>
+
+        
+      </div>
+      <button class="nav right" id="next">&#8594;</button>
+    </div>
+
+    <div class="button-container">
+      <a href="https://www.figma.com/design/ZkEzO8PB1CpXHCNlY2GRsI/Partiful--Shared-Ideas?node-id=0-1&t=v20a3MXEb31Um1IO-1" target="_blank">
+            <button class="redirect-button">Go to Hi-Fi Design</button>
+      </a>
+    </div>
+
+    <h2 id="add">Additional Idea</h2>
+    <p>
+      As explored in the initial sketches, we also experimented with an iMessage plugin to simplify the invitation process.
+      This consisted of a high fidelity mockup of a iMessage plugin, which we also created a mockup with Swift. 
+      While this idea was not realized duet to logistical issues under iMessage plugins, we include the design to 
+      further visualize our concept.
+    </p>
+
+    <div class="case-image-container fade-in" style="animation-delay: 0.4s;">
+        <img src="assets/text.png" alt="Partiful">
+    </div>
+
+
+    <h2 id="final">Final Prototype</h2>
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.loom.com/embed/495507b7930a481180d26aabfdb63ade?sid=e9df5796-518f-41e3-ba10-954514f6c334"
+        frameborder="0"
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <h2 id="conclusion">Conclusion</h2>
+    <p>
+      This project was extremely insightful, since it was my first time working with a 
+      company on a design project. In particular, it was fascinating to devise a solution to a 
+      problem that Partiful had.
+    </p>
+    <p>
+      In particular, being a group of college students, who have used Partiful in the past,
+      this was a great opportunity to be hands on with a product that could benefit more
+      from insight from their target audience.
+    </p>
+    <p>
+      One of the biggest challenges while working this project was to balance between
+      maintaining the high customization ability that Partiful offers, while simplifying
+      the userflow enough to fit with the purpose of easy, small gatherings.
+    </p>
+   
+  </div>
+
+</div>
+  <footer class="footer">
+      <div class="footer-icons">
+          <a href="https://www.linkedin.com/in/julie-hee-su-chung" target="_blank" aria-label="LinkedIn">
+      
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 
+              0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM7.34 19H4.66V9h2.68v10zM6 
+              7.59c-.86 0-1.56-.7-1.56-1.56C4.44 5.17 5.14 4.5 6 4.5s1.56.67 
+              1.56 1.53c0 .86-.7 1.56-1.56 1.56zM19 19h-2.66v-5.34c0-1.27-.03-2.9-1.77-2.9-1.78 
+              0-2.06 1.39-2.06 2.81V19h-2.66V9h2.56v1.36h.04c.36-.68 
+              1.26-1.4 2.6-1.4 2.78 0 3.3 1.83 3.3 4.2V19z"/>
+          </svg>
+          </a>
+
+          <a href="https://github.com/jjchilling" target="_blank" aria-label="GitHub">
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.41 7.84 
+              10.94.57.1.78-.25.78-.56v-1.94c-3.19.69-3.87-1.54-3.87-1.54-.52-1.32-1.28-1.67-1.28-1.67-1.05-.72.08-.7.08-.7 
+              1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 
+              3.36.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.27-5.23-5.63 
+              0-1.24.44-2.26 1.16-3.06-.12-.29-.5-1.45.1-3.02 
+              0 0 .95-.31 3.1 1.17a10.78 10.78 0 0 1 5.64 0c2.15-1.48 
+              3.1-1.17 3.1-1.17.6 1.57.22 2.73.1 3.02.72.8 
+              1.16 1.82 1.16 3.06 0 4.37-2.69 5.34-5.25 
+              5.62.41.35.77 1.04.77 2.1v3.12c0 .31.2.67.79.56C20.71 
+              21.41 24 17.09 24 12c0-6.35-5.15-11.5-12-11.5z"/>
+          </svg>
+          </a>
+      </div>
+      <div class="footer-text">© 2025 Julie Chung</div>
+  </footer>
+
+<script src="script.js"></script>
+<script src="scroll.js"></script>
+<script src="gallery.js"></script>
+</body>
+</html>
