@@ -1,11 +1,11 @@
-// import * as THREE from "three";
-// import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import * as THREE from "three";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 
-import * as THREE from "https://cdn.skypack.dev/three";
-import { GLTFLoader } from "https://cdn.skypack.dev/three/examples/jsm/loaders/GLTFLoader.js";
-import { OrbitControls } from "https://cdn.skypack.dev/three/examples/jsm/controls/OrbitControls.js";
+// import * as THREE from "https://cdn.skypack.dev/three";
+// import { GLTFLoader } from "https://cdn.skypack.dev/three/examples/jsm/loaders/GLTFLoader.js";
+// import { OrbitControls } from "https://cdn.skypack.dev/three/examples/jsm/controls/OrbitControls.js";
 
 let camera, scene, renderer, controls;
 let matchaMaterial;
@@ -59,7 +59,7 @@ function init() {
   scene.add(dirLight.target);
 
   const loader = new GLTFLoader();
-  loader.load("/matcha.glb", (gltf) => {
+  loader.load("./public/matcha/matcha.glb", (gltf) => {
     model = gltf.scene;
     scene.add(model);
 
