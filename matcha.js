@@ -6,7 +6,6 @@ import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.m
 import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.157.0/examples/jsm/loaders/GLTFLoader.js";
 import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.157.0/examples/jsm/controls/OrbitControls.js";
 
-
 // import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.module.js";
 // import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.157.0/examples/jsm/loaders/GLTFLoader.js";
 // import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.157.0/examples/jsm/controls/OrbitControls.js";
@@ -64,7 +63,7 @@ function init() {
   scene.add(dirLight.target);
 
   const loader = new GLTFLoader();
-  loader.load("/matcha/matcha.glb", (gltf) => {
+  loader.load("./public/matcha/matcha.glb", (gltf) => {
     model = gltf.scene;
     scene.add(model);
 
