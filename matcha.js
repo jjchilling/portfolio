@@ -1,6 +1,11 @@
-import * as THREE from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+// import * as THREE from "three";
+// import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+
+
+import * as THREE from "https://cdn.skypack.dev/three";
+import { GLTFLoader } from "https://cdn.skypack.dev/three/examples/jsm/loaders/GLTFLoader.js";
+import { OrbitControls } from "https://cdn.skypack.dev/three/examples/jsm/controls/OrbitControls.js";
 
 let camera, scene, renderer, controls;
 let matchaMaterial;
@@ -16,7 +21,6 @@ function init() {
   container = document.getElementById("matcha-container");
   scene = new THREE.Scene();
 
-  // Camera positioned slightly above, facing down toward the model
   camera = new THREE.PerspectiveCamera(
     45,
     container.clientWidth / container.clientHeight,
@@ -24,7 +28,7 @@ function init() {
     100
   );
   camera.position.set(0, 3.4, 6);
-  camera.lookAt(0, 1.0, 0); // Slight downward angle
+  camera.lookAt(0, 1.0, 0); 
 
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   renderer.shadowMap.enabled = true;
