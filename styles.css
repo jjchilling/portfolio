@@ -766,6 +766,10 @@ ul {
     padding: 40px 20px;
   }
 
+  .sidebar {
+    display: none;
+  }
+
   .hamburger {
     display: block;
     align-items: center;
@@ -867,13 +871,13 @@ ul {
     padding: 40px 20px;
   }
 
-  .sidebar {
+  /* .sidebar {
     position: static;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-  }
+  } */
 
   .main-content h1 {
     font-size: 32px;
@@ -905,6 +909,11 @@ ul {
   .blockPanel {
     font-size: 28px;
     padding: 0 20px;
+  }
+
+
+  .sidebar {
+    display: none;
   }
 
   .hamburger {
