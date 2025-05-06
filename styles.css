@@ -142,6 +142,8 @@ body {
 
 }
 
+
+
 .matcha-container {
   width: 400px;
   height: 400px;
@@ -167,6 +169,7 @@ body {
     text-align: left;
     font-size: 24px;
 }
+
 
 .about-image img {
     max-width: 400px;
@@ -716,6 +719,24 @@ ul {
   margin-top: 60px;
 }
 
+  .matcha-image {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .matcha-image img {
+      max-width: 400px;
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      display: block;
+  }
+
+  .matcha-image:hover {
+    animation: playful-jump 0.5s ease-in-out;
+  }
+
 .footer-icons {
   display: flex;
   gap: 24px;
@@ -777,6 +798,24 @@ ul {
     transition: max-height 0.4s ease-in-out;
   
   }
+
+  .matcha-image {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .matcha-image img {
+      max-width: 250px;
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      display: block;
+  }
+
+
+
+
 
   .matcha-container {
     width: 250px;
@@ -872,6 +911,21 @@ ul {
     display: block;
     align-items: center;
   }
+
+  .matcha-image {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .matcha-image img {
+      max-width: 250px;
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      display: block;
+  }
+
 
   .nav-links {
     position: absolute;
