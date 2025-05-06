@@ -63,7 +63,7 @@ function init() {
   scene.add(dirLight.target);
 
   const loader = new GLTFLoader();
-  loader.load("public/matcha-optimized.glb", (gltf) => {
+  loader.load("matcha-optimized.glb", (gltf) => {
     model = gltf.scene;
     scene.add(model);
 
